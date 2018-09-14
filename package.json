@@ -9,11 +9,14 @@
   "author": "Andrew Carr",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
     "mongoose": "^5.2.14",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
     "request": "^2.88.0"
   }
 }
