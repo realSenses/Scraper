@@ -35,8 +35,8 @@ var app = express();
 //Log request using morgan
 app.use(logger("dev"));
 //bodyparser for handling form submissions
-app.use(bodyParser.urlenconded({
-    extended: false
+app.use(bodyParser.urlencoded({
+  extended: false
 }));
 
 //use express.static for serving Public as a static directory

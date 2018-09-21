@@ -1,0 +1,323 @@
+
+body {
+    background-color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+}
+
+.deleteNote {
+	display: inline-block;
+}
+
+.previousNotes {
+    display: inline-block;
+    width: 87%;
+    padding-right: 30px;
+}
+
+h4 {
+    font-size: 20pt;
+}
+
+.whiteType {
+    color: white;
+    text-align: center;
+}
+
+.col-md-12 {
+    margin-top: 20px;
+} 
+
+.panel a {
+    color: #43cea2;
+}
+
+#centered {
+    text-align: center;
+}
+
+.home {
+    text-align: center;
+    color: white;
+    font-size: 14pt;
+}
+
+.spacer {
+    width: 100%;
+    height: 20px;
+}
+
+.homeColumn1 {
+    float: left;
+    width: 60%;
+    padding: 20px 40px 10px 30px;
+}
+
+.homeColumn2 {
+    float: left;
+    width: 40%;
+    padding: 10px 30px 15px 30px;
+    text-align: center;
+}
+
+.scrape {
+    margin: 0px 10px 0px 10px;
+    padding: 6px;
+    font-size: 12pt;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    background-color: #43cea2;
+    border: #197e75 solid 1px;
+    line-height: 175%;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    touch-action: manipulation;
+    border-radius: 4px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .5);
+}
+
+#scrapeBig {
+    font-size: 18pt;
+    padding: 10px 20px 10px 20px;
+    margin: 0px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .5);
+}
+
+.empty {
+    margin: 0px;
+    padding: 6px;
+    font-size: 12pt;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    background-color: #4e84c4;
+    border: #0347bb solid 1px;
+    line-height: 175%;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    touch-action: manipulation;
+    border-radius: 4px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .5);
+}
+
+#saveBtn {
+   width: 100%;
+   font-size: 14pt;
+   font-weight: bold;
+}
+
+#noteBtn {
+    width: 105px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+#deleteBtn {
+    width: 105px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+#saveNoteBtn {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.scrape:hover {
+    background-color: #197e75;
+}
+
+.empty:hover {
+    background-color: #02307e;
+}
+
+.pageHeader {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.pageType {
+    color: white;
+}
+
+.pageTitle {
+    font-size: 30pt;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+.scrapingTitle {
+    text-align: center;
+    font-size: 22pt;
+    margin: 10px 0px 20px 0px;
+    line-height: 26pt;
+    font-family: 'Roboto Slab', serif;
+}
+
+.homepageTitle {
+    font-family: 'Roboto Slab', serif;
+    color: #43cea2;
+    font-size: 32pt;
+    line-height: 32pt;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.mainContainer {
+    width: 100%;
+    height: 300px;
+    padding: 0px 30px 0px 30px;
+    background-image: url("/assets/img/newsprint.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    line-height: 350px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 15px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url("/assets/img/black80pxTrans.png");
+    background-repeat: repeat-x;
+    background-position: top;
+    height: 155px;
+    width: 100%;
+    z-index: 1;
+}
+
+.topContainer {
+    height: 155px;
+    max-width: 1000px;
+    padding: 0px 20px 0px 10px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#leftMenu {
+    position: relative;
+    float: left;
+    padding-left: 20px;
+    line-height: 100px;
+    font-size: 14pt;
+    font-family: 'Roboto Slab', serif;
+}
+
+#leftMenu a{
+    color: white;
+    margin-right: 10px;
+    padding-bottom: 8px;
+}
+
+#leftMenu a:hover{
+    color: #43cea2;
+    text-decoration: none;
+    border-bottom: #43cea2 10px solid;
+}
+
+#leftMenu a:active {
+    color: #43cea2;
+    text-decoration: none;
+    border-bottom: #43cea2 10px solid;
+}
+
+#rightMenu {
+    position: relative;
+    float: right;
+    text-align: right;
+    line-height: 80px;
+    font-size: 14pt;
+}
+
+#mainHidden {
+    text-align: center;
+    display: none;
+}
+
+@media only screen and (max-width: 750px) {
+#mainHidden {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.homepageTitle {
+    font-size: 30pt;
+    line-height: 30pt;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.scrapingTitle {
+    font-size: 20pt;
+    line-height: 22pt;
+}
+
+.spacer {
+    height: 20px;
+}
+
+.homeColumn1 {
+    float: none;
+    width: 100%;
+    padding: 20px 20px 0px 20px;
+}
+
+.homeColumn2 {
+    float: none;
+    width: 100%;
+    padding: 20px;
+}
+
+#nprLogo {
+    margin-top: 0px;
+}
+
+.scrape {
+    float: none;
+    margin: 20px 0px;
+}
+
+#rightMenu {
+    display: none;
+}
+
+.mainContainer {
+    line-height: 0;
+    height: auto;
+    padding: 60px 10px 10px 10px;
+}
+
+#headerTag {
+    width: 75px;
+    height: 110px;
+    padding: 18px 5px 5px 5px;
+}
+
+#leftMenu {
+    font-size: 12pt;
+    float: right;
+}
+
+#leftMenu a{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 10px;
+}
+
+.topContainer {
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+}
+
+.pageTitle {
+    font-size: 24pt;
+}
+
+} 
