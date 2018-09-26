@@ -9,6 +9,7 @@ To run Cyber Scraper locally please use the following commands in the root direc
 
 ```
 npm install
+
 node server.js
 ```
 
