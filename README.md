@@ -1,7 +1,7 @@
 # Cyber Scraper
 
-Cyber Scraper is a news scraper that scrapes the top tech news from <a href="https://www.theverge.com/tech">The Verge</a>.
-It utilitzes express, express-handlebars, cherrio, body-parser, request, mongoose, and morgan for npm packages, and is deployed on heroku.
+Cyber Scraper is a fully responsive news scraper that scrapes the top tech news from <a href="https://www.theverge.com/tech">The Verge</a>.
+It allows users to scrape articles, save and delete articles, and add and delete comments on saved articles.
 
 ## Installing and Running Locally
 
