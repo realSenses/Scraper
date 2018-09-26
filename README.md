@@ -15,7 +15,7 @@ node server.js
 
 ### Prerequisites
 
-Node.js
+Node.js &
 Terminal/Git Bash console
 
 
