@@ -94,22 +94,20 @@ app.get("/empty", (req, res) => {
     });
   });
   
-//GET route to scrape nytimes website
+//GET route to scrape website
 app.get("/scrape", function (req, res) {
 
-    request("https://www.npr.org/sections/news/", function (error, response, html) {
-  
-      var $ = cheerio.load(html);
-      // Find all elements with an article tag
-      $("div.list-overflow > article").each(function (i, element) {
-        $('time').remove();
+  request('http://www.theverge.com/tech', function(error, response, html) {
+    // Then, we load that into cheerio and save it to $ for a shorthand selector
+    var $ = cheerio.load(html);
+    // Now, we grab every article
+    $('.c-entry-box--compact__title').each(function(i, element) {
         // Save an empty result object
         var result = {};
-  
-        // Add the title and summary of every link, and save them as properties of the result object
-        result.title = $(element).children("div.item-info").children("h2.title").text();
-        result.summary = $(element).children("div.item-info").children("p.teaser").children("a").text();
-        result.link = $(element).children("div.item-info").children("h2.title").children("a").attr("href");
+
+        // Add the text and href of every link, and save them as properties of the result object
+        result.title = $(this).children('a').text();
+        result.link = $(this).children('a').attr('href');
   
         // Create new entry and pass the result object to the entry
         var entry = new Article(result);
@@ -125,7 +123,7 @@ app.get("/scrape", function (req, res) {
             console.log(doc);
           }
         });
-  
+
       });
       res.send("Scrape Complete");
   
